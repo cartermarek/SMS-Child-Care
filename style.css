@@ -353,6 +353,25 @@ textarea {
     }
 }
 
+form {
+    width: 350px;
+    padding-bottom: 25px;
+}
+
+label{
+    text-align: center;
+    width: 100%;
+}
+
+input {
+    margin: 10px auto;
+    width: 100%;
+}
+
+textarea {
+    /* margin-top: 25px; */
+    margin-bottom: 25px;
+}
 
 /* MEDIA QUERY screens 600px or less */
 @media screen and (max-width: 600px) {
