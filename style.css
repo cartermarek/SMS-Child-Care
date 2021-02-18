@@ -113,6 +113,7 @@ h2 {
     margin: 100px 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -195,7 +196,7 @@ img {
 }
 
 .card-message {
-    flex-basis: 70%;
+    /* flex-basis: 70%; */
     padding: 0px 25px;
     line-height: 2;
     background-color: rgba(42, 132, 166, 0.9);
@@ -314,7 +315,6 @@ textarea {
     
     img {
         border: none;
-        background-size: fill;
     }
 
     .main {
@@ -323,8 +323,8 @@ textarea {
 
     .card {
         flex-direction: column;
-        justify-content: center;
-        width: auto;
+        /* justify-content: center; */
+        max-width: 350px;
     }
 
     .card-img {
@@ -333,6 +333,8 @@ textarea {
 
     .card-message {
         /* width: auto; */
+        padding-left: 20%;
+        padding-right: 20%;
     }
 
 
