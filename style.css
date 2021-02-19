@@ -110,7 +110,7 @@ h2 {
 /***** MAIN *****/
 
 .main {
-    margin: 100px 50px;
+    margin: 100px 325px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,11 +184,10 @@ h2 {
 
 img {
     height: 100%;
-    width: 350px;
+    width: 425px;
     border-right: 1px solid #333;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 
 .card-img {
@@ -196,7 +195,7 @@ img {
 }
 
 .card-message {
-    /* flex-basis: 70%; */
+    flex-basis: 70%;
     padding: 0px 25px;
     line-height: 2;
     background-color: rgba(42, 132, 166, 0.9);
@@ -206,17 +205,20 @@ img {
 
 
 
-p, li {
+p {
     font-size: 20px;
 }
 
 .paragraph-tutor {
     text-align: center;
+    width: 100%;
 }
 
-ul {
-    padding-left: 35%;
+li {
+    font-size: 20px;
+    line-height: 1.5;
 }
+
 
 
 /***** FORM *****/
@@ -291,22 +293,35 @@ textarea {
 
 .footer {
     margin-top: 32px;
+    padding-top: 20px;
     background-color: rgba(186,186,186,0.9);
     height: 100px;
     width: 100%;
-    position: relative;
+    text-align: center;
 }
 
 .footer h4 {
-    position: absolute;
-    margin: 0 auto;
-    /* text-align: center; */
-    top: 35%;
-    left: 40%;
+    margin: 20px auto 0px;
+    width: 100%;
+    
 }
 
-/* MEDIA QUERY screens 992px or less */
-@media screen and (max-width: 992px) {
+/* MEDIA QUERY screens 1440px or less */
+@media screen and (max-width: 1440px) {
+    .main {
+        margin: 100px 125px;
+    }
+}
+
+/* MEDIA QUERY screens 1200px or less */
+@media screen and (max-width: 1200px) {
+    .main {
+        margin: 100px 25px;
+    }
+}
+
+/* MEDIA QUERY screens 1000px or less */
+@media screen and (max-width: 1000px) {
 
     .header-title {
         padding-top: 30px;
@@ -315,11 +330,13 @@ textarea {
     
     img {
         border: none;
+        width: 350px;
     }
 
     .main {
+        margin: 100px auto;
     }
-   
+
 
     .card {
         flex-direction: column;
@@ -351,27 +368,29 @@ textarea {
     p, li {
         font-size: 15px;
     }
+
+    form {
+        width: 350px;
+        padding-bottom: 25px;
+    }
+    
+    label{
+        text-align: center;
+        width: 100%;
+    }
+    
+    input {
+        margin: 10px auto;
+        width: 100%;
+    }
+    
+    textarea {
+        /* margin-top: 25px; */
+        margin-bottom: 25px;
+    }
 }
 
-form {
-    width: 350px;
-    padding-bottom: 25px;
-}
 
-label{
-    text-align: center;
-    width: 100%;
-}
-
-input {
-    margin: 10px auto;
-    width: 100%;
-}
-
-textarea {
-    /* margin-top: 25px; */
-    margin-bottom: 25px;
-}
 
 /* MEDIA QUERY screens 600px or less */
 @media screen and (max-width: 600px) {
